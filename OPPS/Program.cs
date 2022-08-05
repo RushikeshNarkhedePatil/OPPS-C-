@@ -27,6 +27,13 @@ namespace OPPS
             m.Multi();
             m.Div();
             m.Mod();
+
+            // Multiple Inharitance
+            Console.WriteLine();
+            Console.WriteLine("Multiple Inharitance");
+            Multiple M = new Multiple();
+            M.Add();
+            M.Sub();
         }
     }
 }
