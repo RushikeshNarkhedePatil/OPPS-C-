@@ -7,6 +7,8 @@ namespace OPPS
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            // Method Overloading
+            Console.WriteLine("Method Overloading");
             MethodOverloading s1 = new MethodOverloading();
             Console.WriteLine(s1.name);
             Console.WriteLine(s1.Add(10, 20));
@@ -34,6 +36,16 @@ namespace OPPS
             Multiple M = new Multiple();
             M.Add();
             M.Sub();
+
+            // Hierarchical Inharitance
+            Console.WriteLine();
+            Console.WriteLine("Hierarchical Inharitance");
+            Hierarchical h = new Hierarchical();
+            h.Add();
+            h.Sub();
+            Hierarchical1 h1 = new Hierarchical1();
+            h1.Add();
+            h1.Multi();
         }
     }
 }
