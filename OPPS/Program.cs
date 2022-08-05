@@ -6,8 +6,14 @@ namespace OPPS
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Encapsulation
+            Console.WriteLine("Encapsulation");
+            Encapsulation E = new Encapsulation();
+            //Program e = new Encapsulation();
+            E.setValue(8876);
+            Console.WriteLine("ATM Pin is\t"+E.getValue());
             // Method Overloading
+            Console.WriteLine();
             Console.WriteLine("Method Overloading");
             MethodOverloading s1 = new MethodOverloading();
             Console.WriteLine(s1.name);
