@@ -4,9 +4,23 @@ namespace OPPS
 {
     class Program
     {
+        Program()
+        {
+            Console.WriteLine("Inside Default Constrocter");
+        }
+        Program(int a,int b)
+        {
+            Console.WriteLine("Inside Paramiterized Constrocter\t"+(Convert.ToInt32(a + b)));
+        }
         static void Main(string[] args)
         {
+            // Constroctor
+            Console.WriteLine("Constrocters");
+            Program p1 = new Program();     //default constroctor
+            Program p = new Program(11,22); // parameterized constroctor
+
             // Encapsulation
+            Console.WriteLine();
             Console.WriteLine("Encapsulation");
             Encapsulation E = new Encapsulation();
             //Program e = new Encapsulation();
