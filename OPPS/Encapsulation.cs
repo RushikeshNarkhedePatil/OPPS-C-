@@ -6,8 +6,8 @@ namespace OPPS
 {
     class Encapsulation
     {
-        private int atmPin;
-        public int getValue()
+        private int atmPin;     //characteristics
+        public int getValue()   //behaviour
         {
             return atmPin;
         }

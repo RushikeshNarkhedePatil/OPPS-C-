@@ -4,20 +4,22 @@ namespace OPPS
 {
     class Program
     {
+        //default constuctor
         Program()
         {
             Console.WriteLine("Inside Default Constrocter");
         }
-        Program(int a,int b)
+        //parameterized constructor
+        Program(int a, int b)
         {
-            Console.WriteLine("Inside Paramiterized Constrocter\t"+(Convert.ToInt32(a + b)));
+            Console.WriteLine("Inside Paramiterized Constrocter\t" + (Convert.ToInt32(a + b)));
         }
         static void Main(string[] args)
         {
-            // Constroctor
+            // Constructor
             Console.WriteLine("Constrocters");
             Program p1 = new Program();     //default constroctor
-            Program p = new Program(11,22); // parameterized constroctor
+            Program p = new Program(11, 22); // parameterized constroctor
 
             // Encapsulation
             Console.WriteLine();
@@ -25,8 +27,8 @@ namespace OPPS
             Encapsulation E = new Encapsulation();
             //Program e = new Encapsulation();
             E.setValue(8876);
-            Console.WriteLine("ATM Pin is\t"+E.getValue());
-            // Method Overloading
+            Console.WriteLine("ATM Pin is\t" + E.getValue());
+            // Method Overloading:-used for achieved compile time polymorphism 
             Console.WriteLine();
             Console.WriteLine("Method Overloading");
             MethodOverloading s1 = new MethodOverloading();
@@ -66,6 +68,18 @@ namespace OPPS
             Hierarchical1 h1 = new Hierarchical1();
             h1.Add();
             h1.Multi();
+            // Runtime Polymorphism
+            Console.WriteLine();
+            Console.WriteLine("Runtime Polymorphism");
+            Runtime_Polymo1 poly1 = new Runtime_Polymo1();
+            poly1.Fun();
+
+            //Abstractions
+            Console.WriteLine();
+            Console.WriteLine("Abstractions");
+            Abstractions1 A1 = new Abstractions1();
+            // A1.run();//achieved abstraction
+            A1.gun();
         }
     }
 }
